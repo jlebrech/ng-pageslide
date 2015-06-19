@@ -58,7 +58,8 @@ angular.module("pageslide-directive", [])
                 if (slider.children.length === 0) 
                     throw new Error('You have to content inside the <pageslide>');
                 
-                content = angular.element(slider.children);
+                
+                content = angular.element(slider.getElementsByClassName('drawer'));
 
                 /* Append */
                 body.appendChild(slider);
